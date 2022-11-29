@@ -1,0 +1,35 @@
+@import '../mixins/mixin';
+@import '../variables/variable';
+
+/*==========================================================================
+                                    nav part start
+============================================================================*/
+.menu {
+    background: $head_color;
+    padding: 15px 0 !important;
+
+    .main_menu {
+        ul {
+            li {
+                margin-left: 35px;
+
+                a {
+                    @include fs(#fff, 12px, 800, $open);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.fix_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*==========================================================================
+                                    nav part end
+============================================================================*/

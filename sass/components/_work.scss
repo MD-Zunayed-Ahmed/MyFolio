@@ -1,0 +1,69 @@
+@import '../mixins/mixin';
+@import '../variables/variable';
+
+/*==========================================================================
+                                    work part start
+============================================================================*/
+#work {
+    padding: 95px 0 0;
+    overflow: hidden;
+
+    .common_head {
+        h2 {
+            padding-bottom: 12px;
+        }
+
+        p {
+            width: 665px;
+            padding-top: 10px;
+            margin: 0 auto;
+        }
+    }
+
+    .work_row {
+        padding-top: 65px;
+
+        .work_img {
+            position: relative;
+
+            .overly {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 85%;
+                width: 90%;
+                background: #259b94;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                padding: 59px 39px;
+                opacity: 0;
+                transition: all linear .3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                h3 {
+                    @include fs(#fff, 21px, 800, $open);
+                }
+
+                p {
+                    @include fs(#fff, 16px, 400, $open);
+                    line-height: 21px;
+                    width: 210px;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                }
+            }
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/*==========================================================================
+                                    work part end
+============================================================================*/

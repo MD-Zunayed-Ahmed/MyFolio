@@ -1,0 +1,436 @@
+/*===================================================================================
+                                        common css start
+=====================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.common_head h2 {
+  font-size: 46px;
+  color: #02918c;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+.common_head p {
+  font-size: 16px;
+  color: #7e8287;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 41px;
+}
+
+/*===================================================================================
+                                        common css end
+=====================================================================================*/
+/*==========================================================================
+                                    about part start
+============================================================================*/
+#about {
+  padding: 85px 0 100px;
+}
+#about .about_text {
+  padding-top: 25px;
+  width: 880px;
+  margin: 0 auto;
+}
+#about .about_text p {
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 41px;
+}
+#about .about_text p span {
+  color: #7e8287;
+  font-size: 23px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+#about .about_item {
+  padding-top: 80px;
+}
+#about .about_item .item_inner {
+  border-right: 1px solid #d9dbdb;
+  padding: 30px 0 50px;
+}
+#about .about_item .item_inner .item_head {
+  padding-top: 20px;
+}
+#about .about_item .item_inner .item_head h3 {
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+#about .about_item .item_inner .item_pera {
+  padding-top: 25px;
+  width: 165px;
+  margin: 0 auto;
+}
+#about .about_item .item_inner .item_pera p {
+  color: #7e8287;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21px;
+}
+#about .about_item .no-border {
+  border-right: 0;
+}
+
+/*==========================================================================
+                                    about part end
+============================================================================*/
+/*==========================================================================
+                                    banner part start
+============================================================================*/
+#banner {
+  padding: 210px 0;
+  position: relative;
+  z-index: 1;
+}
+#banner::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #0e807c 0%, #cfc91d 100%);
+  opacity: 18%;
+  z-index: -1;
+}
+#banner .banner_text {
+  color: #fff;
+}
+#banner .banner_text h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 50px;
+}
+#banner .banner_text h1 span {
+  color: #fff;
+  font-size: 68px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 24px;
+}
+#banner .banner_text h1 p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+}
+#banner .banner_text img {
+  display: block;
+  margin: 0 auto;
+}
+#banner .banner_text a {
+  color: #0b1016;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  background: #cfc91d;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+/*==========================================================================
+                                    banner part end
+============================================================================*/
+/*==========================================================================
+                                    contact part start
+============================================================================*/
+#contact {
+  padding: 85px 0 65px;
+}
+#contact .common_head p {
+  padding-top: 15px;
+  width: 680px;
+  margin: 0 auto;
+}
+
+/*==========================================================================
+                                    contact part end
+============================================================================*/
+/*==========================================================================
+                                    footer part start
+============================================================================*/
+#footer {
+  padding: 30px 0 20px;
+  background: #000;
+}
+#footer .footer_link a {
+  color: #7e8287;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+#footer .footer_link a i {
+  padding-right: 3px;
+}
+
+/*==========================================================================
+                                    footer part end
+============================================================================*/
+/*==========================================================================
+                                    nav part start
+============================================================================*/
+.menu {
+  background: #02918c;
+  padding: 15px 0 !important;
+}
+.menu .main_menu ul li {
+  margin-left: 35px;
+}
+.menu .main_menu ul li a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.fix_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/*==========================================================================
+                                    nav part end
+============================================================================*/
+/*==========================================================================
+                                    service part start
+============================================================================*/
+#service {
+  background: #f0f0e8;
+}
+#service .ser_content {
+  padding: 60px 0 85px;
+}
+#service .ser_content .common_head h2 {
+  padding-bottom: 20px;
+}
+#service .ser_content .common_head p {
+  padding-right: 92px;
+  padding-top: 10px;
+}
+#service .ser_content .ser_item .item_content {
+  padding-top: 45px;
+}
+#service .ser_content .ser_item .item_content h3 {
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#service .ser_content .ser_item .item_content p {
+  color: #7e8287;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21px;
+  width: 165px;
+}
+#service .ser_ban {
+  padding: 365px 0;
+  position: relative;
+}
+#service .ser_ban::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(240, 240, 232, 0.3);
+  z-index: 1;
+}
+
+/*==========================================================================
+                                    service part end
+============================================================================*/
+/*==========================================================================
+                                    work part start
+============================================================================*/
+#work {
+  padding: 95px 0 0;
+  overflow: hidden;
+}
+#work .common_head h2 {
+  padding-bottom: 12px;
+}
+#work .common_head p {
+  width: 665px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+#work .work_row {
+  padding-top: 65px;
+}
+#work .work_row .work_img {
+  position: relative;
+}
+#work .work_row .work_img .overly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 85%;
+  width: 90%;
+  background: #259b94;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 59px 39px;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+#work .work_row .work_img .overly:hover {
+  opacity: 1;
+}
+#work .work_row .work_img .overly h3 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+#work .work_row .work_img .overly p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21px;
+  width: 210px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#work .work_row .work_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*==========================================================================
+                                    work part end
+============================================================================*/
+/*==========================================================================
+                                    form part start
+============================================================================*/
+#form {
+  padding: 70px 0;
+  background: #0b0b0b;
+}
+#form input {
+  width: 640px;
+  border: none;
+  border-bottom: 1px solid #898989;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 70px;
+}
+#form textarea {
+  border: none;
+  border-bottom: 1px solid #898989;
+  background: transparent;
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  resize: none;
+}
+#form .input_line {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #898989;
+  background: transparent;
+  text-align: center;
+  margin-top: 45px;
+}
+#form button {
+  color: #0b1016;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  padding: 16px 64px;
+  text-transform: uppercase;
+  background: #cfc91d;
+  border: none;
+  letter-spacing: 2px;
+}
+
+/*==========================================================================
+                                    form part end
+============================================================================*/
+/*==========================================================================
+                                    back to top button start
+============================================================================*/
+.bc_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #02918c;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+}
+
+/*==========================================================================
+                                    back to top button end
+============================================================================*//*# sourceMappingURL=style.css.map */

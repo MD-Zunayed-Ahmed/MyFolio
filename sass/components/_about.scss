@@ -1,0 +1,60 @@
+@import '../mixins/mixin';
+@import '../variables/variable';
+
+/*==========================================================================
+                                    about part start
+============================================================================*/
+#about {
+    padding: 85px 0 100px;
+
+    .about_text {
+        padding-top: 25px;
+        width: 880px;
+        margin: 0 auto;
+
+        p {
+            @include fs($pera_color, 16px, 400, $open);
+            line-height: 41px;
+
+            span {
+                @include fs($pera_color, 23px, 800, $open);
+            }
+        }
+    }
+
+    .about_item {
+        padding-top: 80px;
+
+        .item_inner {
+            border-right: 1px solid #d9dbdb;
+            padding: 30px 0 50px;
+
+            .item_head {
+                padding-top: 20px;
+
+                h3 {
+                    @include fs($pera_color, 16px, 800, $open);
+                }
+            }
+
+            .item_pera {
+                padding-top: 25px;
+                width: 165px;
+                margin: 0 auto;
+
+                p {
+                    @include fs($pera_color, 11px, 400, $open);
+                    line-height: 21px;
+                }
+            }
+        }
+
+        .no-border {
+            border-right: 0;
+        }
+    }
+}
+
+/*==========================================================================
+                                    about part end
+============================================================================*/

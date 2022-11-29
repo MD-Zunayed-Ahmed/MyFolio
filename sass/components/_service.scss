@@ -1,0 +1,56 @@
+@import '../mixins/mixin';
+@import '../variables/variable';
+
+/*==========================================================================
+                                    service part start
+============================================================================*/
+#service {
+    background: #f0f0e8;
+
+    .ser_content {
+        padding: 60px 0 85px;
+
+        .common_head {
+            h2 {
+                padding-bottom: 20px;
+            }
+
+            p {
+                padding-right: 92px;
+                padding-top: 10px;
+            }
+        }
+
+        .ser_item {
+            .item_content {
+                padding-top: 45px;
+
+                h3 {
+                    @include fs($pera_color, 16px, 800, $open);
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    @include fs($pera_color, 11px, 400, $open);
+                    line-height: 21px;
+                    width: 165px;
+                }
+            }
+        }
+    }
+
+    .ser_ban {
+        padding: 365px 0;
+        position: relative;
+
+        &::after {
+            @include after(0, 0, 100%, 100%, rgba(240, 240, 232, 0.30));
+            z-index: 1;
+        }
+    }
+}
+
+/*==========================================================================
+                                    service part end
+============================================================================*/
